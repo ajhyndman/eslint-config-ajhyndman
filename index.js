@@ -14,6 +14,7 @@ module.exports = {
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
     "eol-last": ["error", "always"],
+    "max-len": ["error", { "code": 100 }],
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
 
     // eslint-plugin-import
