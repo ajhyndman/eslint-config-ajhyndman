@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "env": {
     "es6": true,
     "node": true
@@ -38,6 +38,19 @@ module.exports = {
         ],
         "newlines-between": "always"
       }
-    ]
+    ],
+
+    // eslint-plugin-react
+    "react/prefer-es6-class": ["error", "always"],
+    "react/prefer-stateless-function": "error",
+    "react/sort-comp": ["error", {
+      "order": [
+        "static-methods",
+        "lifecycle",
+        "/^on.+$/",
+        "everything-else",
+        "render"
+      ]
+    }]
   }
 };
