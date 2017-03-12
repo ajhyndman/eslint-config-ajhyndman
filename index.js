@@ -20,7 +20,7 @@ module.exports = {
       "functions": "always-multiline"
     }],
     "eol-last": ["error", "always"],
-    "indent": ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "max-len": ["error", { "code": 100 }],
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
 
