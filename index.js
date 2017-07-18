@@ -9,7 +9,8 @@ module.exports = {
   },
   "parser": "babel-eslint",
   "plugins": [
-    "import"
+    "import",
+    "no-null"
   ],
   "rules": {
     "comma-dangle": ["error", {
@@ -20,9 +21,12 @@ module.exports = {
       "functions": "always-multiline"
     }],
     "eol-last": ["error", "always"],
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
     "indent": ["error", 2, { "SwitchCase": 1 }],
-    "max-len": ["error", { "code": 100 }],
+    "quotes": ["error", "single"],
+    "max-len": ["error", { "code": 100, "ignoreStrings": true }],
     "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "semi": ["error", "always"],
 
     // eslint-plugin-import
     "import/first": "error",
@@ -40,11 +44,15 @@ module.exports = {
       }
     ],
 
+    // eslint-plugin-no-null
+    "no-null/no-null": ["error"],
+
     // eslint-plugin-react
     "react/prefer-es6-class": ["error", "always"],
     "react/prefer-stateless-function": "error",
     "react/sort-comp": ["error", {
       "order": [
+        "type-annotations",
         "static-methods",
         "lifecycle",
         "/^on.+$/",

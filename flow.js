@@ -5,6 +5,16 @@ module.exports = {
   ],
   "rules": {
     // eslint-plugin-flow
-    "flowtype/require-valid-file-annotation": ["error", "always"]
+    "flowtype/object-type-delimiter": ["error", "semicolon"],
+    "flowtype/require-valid-file-annotation": ["error", "always"],
+    "flowtype/semi": "error",
+    "flowtype/space-after-type-colon": [
+      "error",
+      "always"
+    ],
+    "flowtype/space-before-type-colon": [
+      "error",
+      "never"
+    ],
   }
 };
