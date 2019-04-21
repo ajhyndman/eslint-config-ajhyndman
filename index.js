@@ -45,7 +45,7 @@ module.exports = {
     ],
 
     // eslint-plugin-no-null
-    "no-null/no-null": ["error"],
+    "no-null/no-null": "error",
 
     // eslint-plugin-react
     "react/prefer-es6-class": ["error", "always"],
