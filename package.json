@@ -8,9 +8,11 @@
   "license": "MIT",
   "peerDependencies": {
     "babel-eslint": ">=7.1.1",
+    "eslint-config-prettier": ">=4.1.0",
     "eslint-plugin-flowtype": ">=2.30.0",
     "eslint-plugin-import": ">=2.2.0",
     "eslint-plugin-no-null": ">=1.0.2",
+    "eslint-plugin-prettier": ">=3.0.1",
     "eslint-plugin-react": ">=6.10.0"
   }
 }

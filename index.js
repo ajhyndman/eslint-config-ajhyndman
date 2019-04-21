@@ -1,5 +1,10 @@
 module.exports = {
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
+  ],
   "env": {
     "browser": true,
     "es6": true,
@@ -15,23 +20,11 @@ module.exports = {
   "parser": "babel-eslint",
   "plugins": [
     "import",
-    "no-null"
+    "no-null",
+    "prettier"
   ],
   "rules": {
-    "comma-dangle": ["error", {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "always-multiline"
-    }],
-    "eol-last": ["error", "always"],
     "eqeqeq": ["error", "always", { "null": "ignore" }],
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "quotes": ["error", "single"],
-    "max-len": ["error", { "code": 100, "ignoreStrings": true }],
-    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
-    "semi": ["error", "always"],
 
     // eslint-plugin-import
     "import/first": "error",
